@@ -23,6 +23,7 @@ Inside root folder run the following commands:
 
 ```
 pipenv shell
+pipenv install -r requirements.txt
 ./start_app.sh
 ```
 

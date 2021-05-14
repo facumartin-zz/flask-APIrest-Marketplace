@@ -5,7 +5,7 @@ import datetime as dt
 import uuid
 
 result = requests.post('http://127.0.0.1:5000/offer', json={
-    "project_id": "98edba5a-d482-423d-8d1a-33cf8bd3cf8a", "price": 300, "seller": "best_seller"})
+    "project_id": "b481b8c6-4be0-480b-a5a0-6721452b3d3a", "price": 0, "seller": "best_seller"})
 result = requests.post('http://127.0.0.1:5000/offer', json={
-    "project_id": "98edba5a-d482-423d-8d1a-33cf8bd3cf8a", "price": 100, "seller": "best_seller", "min_price": 50})
+    "project_id": "b481b8c6-4be0-480b-a5a0-6721452b3d3a", "price": 8, "seller": "best_seller", "min_price": 1})
 print(result.text)

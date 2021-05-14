@@ -31,7 +31,7 @@ class Project():
             str(bids_deadline), '%Y-%m-%d')
 
     def assign_better_offer(self, offer):
-        if(dt.datetime.now() < self.bids_deadline):
+        if((dt.datetime.now() < self.bids_deadline) and (offer.price < self.max_budget)):
             if (self.assigned_offer == None):
                 self.assigned_offer = offer
                 self.lowest_bid_amount = offer.price
